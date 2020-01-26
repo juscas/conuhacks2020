@@ -101,10 +101,15 @@ def battle(pokemon1, pokemon2):
     pk2_health = 20
     start = random.randrange(0,1)
     if start == 0:
-        print('Please enter the name of the move the options are ' + pokemon1[0]['moves'])
+        move = input('Please enter the name of the move the options are ' + pokemon1[0]['moves'][0]+ " or " + pokemon1[0]['moves'][0] + ": ")
+        for i in range(3):
+            if move != pokemon1[0]['moves'][0] or move != pokemon1[0]['moves'][0]:
+                
+        print (move)
     if start == 1:
-        print('Please enter the name of the move the options are ' + pokemon2[0]['moves'])
+        move = input('Please enter the name of the move the options are ' + pokemon2[0]['moves'][0] + " or " + pokemon2[0]['moves'][1] + ": ")
+        print (move)
         
 
-#battle(pokemon1, pokemon2)
-print (attack(pokemon1, pokemon2))
+battle(pokemon1, pokemon2)
+#print (attack(pokemon1, pokemon2))
